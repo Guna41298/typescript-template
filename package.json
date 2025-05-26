@@ -1,15 +1,16 @@
 {
-  "name": "",
-  "description": "",
-  "repository": "",
-  "homepage": "",
-  "author": "",
-  "keywords": [],
-  "private": true,
+  "name": "boardgame",
   "version": "0.0.1",
-  "engines": {
-    "node": ">=13.2.0"
+  "description": "A sample TypeScript CLI tool built by Guna",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Guna41298/typescript-template.git"
   },
+  "homepage": "https://github.com/Guna41298/my-cli-tool#readme",
+  "author": "Guna <your.email@example.com>",
+  "keywords": ["cli", "typescript", "tool", "automation"],
+  "license": "MIT",
+  "private": false,
   "main": "./build/index.js",
   "files": [
     "build/lib/**/*",
@@ -26,7 +27,9 @@
     "format": "prettier src/**/*.ts -w",
     "build-live": "tsc -w && tsc-alias -w"
   },
-  "license": "MIT",
+  "engines": {
+    "node": ">=13.2.0"
+  },
   "dependencies": {
     "commander": "^7.2.0"
   },
